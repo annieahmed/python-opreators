@@ -1,0 +1,207 @@
+Arithmetic Operators in Python   
+Arithmetic operators are used to perform mathematical calculations like addition, subtraction, multiplication, etc.
+
+Operator	           Symbol   	Example   	Output
+Addition	              +	      5 + 3	        8
+Subtraction	           -	      10 - 4	      6
+Multiplication	       *	      6 * 2	        12
+Division              	/     	  9 / 2	        4.5
+Floor Division	       //	      9 // 2	     4 (removes decimal)
+Modulus (Remainder)   	%   	  10 % 3	     1 (remainder)
+Exponentiation (Power)	**	   2 ** 3	       8 (2³ = 8)
+
+
+✅ Example in Python
+
+a = 10
+b = 3
+
+print("Addition:", a + b)        # 10 + 3 = 13
+print("Subtraction:", a - b)     # 10 - 3 = 7
+print("Multiplication:", a * b)  # 10 * 3 = 30
+print("Division:", a / b)        # 10 / 3 = 3.3333
+print("Floor Division:", a // b) # 10 // 3 = 3
+print("Modulus:", a % b)         # 10 % 3 = 1
+print("Exponentiation:", a ** b) # 10 ** 3 = 1000
+This is how arithmetic operators work in Python! 
+
+
+
+Assignment Operators in Python
+Assignment operators are used to assign values to variables.
+
+Operator	Example  	Meaning
+=	        a = 10  	Assign value 10 to a
++=      	a += 5	  a = a + 5
+-=	      a -= 3	  a = a - 3
+*=	      a *= 2	  a = a * 2
+/=	      a /= 4	  a = a / 4
+//=	      a //= 2	  a = a // 2
+%=	      a %= 3	  a = a % 3
+**=	      a **= 2  	a = a ** 2
+
+
+✅ Example in Python
+
+a = 10  # Assign 10 to a
+a += 5  # a = a + 5 (Now a is 15)
+
+print("Value of a:", a)  # Output: 15
+This is how assignment operators work in Python!
+
+
+Comparison Operators in Python
+Comparison operators are used to compare two values and return True or False.
+
+Operator	Example    	Meaning                        	Output
+==	      a == b	     Equal to	                  True if a is equal to b
+!=	      a != b	     Not equal to             	True if a is not equal to b
+>	        a > b      	Greater than	              True if a is greater than b
+<	        a < b	      Less than                	  True if a is less than b
+>=	      a >= b	    Greater than or equal to	  True if a is greater than or equal to b
+<=	      a <= b	    Less than or equal to	      True if a is less than or equal to b
+
+
+✅ Example in Python
+
+a = 10
+b = 5
+
+print(a == b)  # False (10 is not equal to 5)
+print(a != b)  # True  (10 is not equal to 5)
+print(a > b)   # True  (10 is greater than 5)
+print(a < b)   # False (10 is not less than 5)
+print(a >= b)  # True  (10 is greater than or equal to 5)
+print(a <= b)  # False (10 is not less than or equal to 5)
+These operators are useful for conditions and decision-making in Python! 
+
+
+Logical Operators in Python
+Logical operators are used to combine multiple conditions and return True or False based on the logic.
+
+Operator    	Example             	Meaning                                      	Output
+and       	a > 5 and a < 15  	True if both conditions are True	                 True
+or	        a > 5 or a < 3	    True if at least one condition is True	           True
+not       	not(a > 5)	        Reverses the result (True → False, False → True)	 False
+
+
+✅ Example in Python
+
+a = 10
+
+print(a > 5 and a < 15)  # True (Both conditions are True)
+print(a > 5 or a < 3)    # True (One condition is True)
+print(not(a > 5))        # False (Reverses True to False)
+Logical operators are mostly used in conditional statements (if-else). 
+
+
+Identity Operators in Python 
+Identity operators are used to compare the memory location of two objects (whether they are the same object or not).
+
+Operator	Example	       Meaning	                                             Output
+is	      a is b	      True if both variables refer to the same object	        True
+is not	  a is not b   	True if both variables refer to different objects   	  
+
+
+✅ Example in Python
+
+a = [1, 2, 3]
+b = a  # b refers to the same list as a
+c = [1, 2, 3]  # c is a new list with the same values
+
+print(a is b)      # True (Both refer to the same object)
+print(a is c)      # False (Different objects, even with the same values)
+print(a is not c)  # True (a and c are different objects)
+Identity operators check if two variables point to the same memory location, not just if their values are equal.
+
+
+Membership Operators in Python 
+Membership operators are used to check whether a value exists in a sequence (like a list, string, or tuple).
+
+Operator	   Example	      Meaning                               	Output
+in	         x in list	    True if x exists in the list	          True
+not in	    x not in list	  True if x does NOT exist in the list   	True
+
+
+✅ Example in Python
+
+numbers = [1, 2, 3, 4, 5]
+text = "Hello World"
+
+print(3 in numbers)          # True (3 is in the list)
+print(6 in numbers)          # False (6 is NOT in the list)
+print("H" in text)           # True ('H' is in "Hello World")
+print("Python" not in text)  # True ('Python' is NOT in "Hello World")
+These operators are useful for searching values in lists, strings, tuples, etc. 
+
+
+Bitwise Operators in Python (Simple Explanation)
+Bitwise operators work at the binary (bit) level and perform operations directly on bits (0s and 1s).
+
+Operator	   Symbol	     Meaning	                        Example (Binary Calculation)          	Output
+AND       	   &	     Sets 1 if both bits are 1        	 5 & 3 → 0101 & 0011	                  0001 (1)
+OR	          `       	`	                                  Sets 1 if at least one bit is 1	        `5
+XOR	           ^	     Sets 1 if bits are different	       5 ^ 3 → 0101 ^ 0011	                 0110 (6)
+NOT           	~	     Inverts bits (1 → 0, 0 → 1)      	 ~5 → ~0101	                           -6 (2's complement)
+Left Shift	   <<	     Shifts bits left (Multiply by 2)   	5 << 1 → 0101 << 1	                  1010 (10)
+Right Shift   	>>	   Shifts bits right (Divide by 2)	   5 >> 1 → 0101 >> 1                    	0010 (2)
+
+✅ Example in Python
+
+a = 5  # Binary: 0101
+b = 3  # Binary: 0011
+
+print(a & b)  # AND → 1
+print(a | b)  # OR  → 7
+print(a ^ b)  # XOR → 6
+print(~a)     # NOT → -6
+print(a << 1) # Left Shift → 10
+print(a >> 1) # Right Shift → 2
+Bitwise operators are faster and useful in low-level programming, encryption, and data processing. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
