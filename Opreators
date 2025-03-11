@@ -3,11 +3,11 @@ Arithmetic operators are used to perform mathematical calculations like addition
 
 Operator	           Symbol   	Example   	Output
 Addition	              +	      5 + 3	        8
-Subtraction	           -	      10 - 4	      6
-Multiplication	       *	      6 * 2	        12
+Subtraction	             -	      10 - 4	      6
+Multiplication	         *	      6 * 2	        12
 Division              	/     	  9 / 2	        4.5
-Floor Division	       //	      9 // 2	     4 (removes decimal)
-Modulus (Remainder)   	%   	  10 % 3	     1 (remainder)
+Floor Division	         //	      9 // 2	     4 (removes decimal)
+Modulus (Remainder)   	 %   	  10 % 3	     1 (remainder)
 Exponentiation (Power)	**	   2 ** 3	       8 (2³ = 8)
 
 
